@@ -19,7 +19,7 @@ export default async function Explore() {
         const recipeList: JSX.Element[] = [];
 
         recipes.forEach((recipe) => {
-            recipeList.push(<div className="flex relative flex-col gap-1 overflow-hidden rounded-lg p-4 transition-all duration-300 ease-in-out shadow-md shadow-indigo-900 group" key={recipe.id}>
+            recipeList.push(<div className="flex relative flex-grow flex-col gap-1 overflow-hidden rounded-lg p-4 transition-all duration-300 ease-in-out shadow-md shadow-indigo-900 group" key={recipe.id}>
                 <h2 className="font-bold tracking-wide text-lg">{recipe.name}</h2>
                 <p className="italic">{recipe.ingredients.join(", ")}</p>
                 <p>{recipe.instructions}</p>
@@ -36,9 +36,9 @@ export default async function Explore() {
     await renderRecipes();
 
     return (
-        <div className="flex flex-col justify-evenly items-center h-screen max-h-screen">
+        <div className="flex flex-col justify-evenly items-center h-screen max-h-screen p-5">
         <div id="head" className="flex flex-col gap-2">
-            <h1 className="text-4xl tracking-wider font-bold">Explore Your Recipes</h1>
+            <h1 className="text-4xl tracking-wider text-center font-bold">Explore Your Recipes</h1>
         </div>
         <div id="recipe-data" className="flex flex-row flex-wrap gap-3 justify-center items-center">
             {await renderRecipes()}
