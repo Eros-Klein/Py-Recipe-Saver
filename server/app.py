@@ -8,7 +8,7 @@ app = fl.Flask(__name__)
 
 demo.polluteExampleData(database)
 
-@app.route('/')
+@app.route('/api/v1/recipes', methods=['GET'])
 def index():
     return fl.jsonify([recipe.to_dict() for recipe in database.get_all_recipes()])
 
