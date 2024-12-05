@@ -1,4 +1,6 @@
-# Recipe List
+# FlavorSaver - Save your recipes!
+
+![Happy People](./assets/happy-people.jpg)
 
 ## Goals
 - Creating a very basic __full-stack application__.
@@ -29,5 +31,6 @@
   ```
 - Install the required node packages
   ```
+    cd client
     npm install
   ```

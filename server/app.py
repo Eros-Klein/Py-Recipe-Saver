@@ -13,3 +13,5 @@ def index():
     return fl.jsonify([recipe.to_dict() for recipe in database.get_all_recipes()])
 
 app.run(port=5000)
+
+database.shutdown()
