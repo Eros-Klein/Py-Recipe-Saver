@@ -6,7 +6,7 @@
 - Creating a very basic __full-stack application__.
 - Learning how to use __Flask__ to create a RESTful API.
 - Leaning how to access a database from a Flask application using __psycopg2__.
-- Learning how to use __React__ to create a frontend that consumes the API.
+- Learning how to use the __NextJs React framework__ to create a frontend that consumes the API.
 - Learning how to use __Docker__ to containerize the application.
 
 ## Requirements
